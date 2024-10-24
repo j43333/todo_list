@@ -1,0 +1,95 @@
+body {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.028) 0%, rgb(178, 84, 131) 100%);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff; /* Ensure text color is readable on the background */
+}
+
+#todo-container {
+    background: rgb(230, 116, 162);
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid #1e222e;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+#header {
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#input-box {
+    width: calc(100% - 115px); /* Adjust width to accommodate the button */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#input-button {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e60ea;
+}
+
+#input-button:hover {
+    background-color: #9eb7fd;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+li {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative; /* For positioning delete and edit buttons */
+}
+
+.edit-btn, .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: crimson;
+    cursor: pointer;
+    border: none;
+    padding: 3px 5px;
+    background: none;
+}
+
+.delete-btn {
+    right: 50px; /* Adjust the position to not overlap with edit button */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    border: 1px solid gray;
+}
+
+/* Clear floats if used */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
